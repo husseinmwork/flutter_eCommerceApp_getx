@@ -38,9 +38,10 @@ class MyApp extends StatelessWidget {
         fontFamily: "PlayfairDisplay",
         textTheme: const TextTheme(
           //headline1 this deprecated
+          //big title
           displayLarge: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 26, color: AppColor.black),
-           //h2
+           //h2 normal title appbar title
           displayMedium: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 20, color: AppColor.black),
           //bodyText1 this deprecated

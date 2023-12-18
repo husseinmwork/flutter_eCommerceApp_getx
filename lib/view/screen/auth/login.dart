@@ -27,8 +27,9 @@ class LoginScreen extends StatelessWidget {
                 .copyWith(color: AppColor.grey)),
       ),
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
+        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 30),
         child: ListView(children: [
+          const SizedBox(height: 15),
           const LogoAuth(),
           const CustomTextTitleAuth(text: "Welcome Back"),
           const SizedBox(height: 10),
@@ -36,23 +37,28 @@ class LoginScreen extends StatelessWidget {
               text:
                   "Sign In With Your Email And Password OR Continue With Social Media"),
           const SizedBox(height: 65),
-           CustonTextFormAuth(
+          CustonTextFormAuth(
             mycontroller: controller.email,
             hinttext: "Enter Your Email",
             iconData: Icons.email_outlined,
             labeltext: "Email",
             // mycontroller: ,
           ),
-           CustonTextFormAuth(
+          CustonTextFormAuth(
             mycontroller: controller.password,
             hinttext: "Enter Your Password",
             iconData: Icons.lock_outline,
             labeltext: "Password",
             // mycontroller: ,
           ),
-          const Text(
-            "Forget Password",
-            textAlign: TextAlign.end,
+          InkWell(
+            onTap: (){
+              controller.goToForgetPassword();
+            },
+            child: const Text(
+              "Forget Password",
+              textAlign: TextAlign.end,
+            ),
           ),
           CustomButtomAuth(text: "Sign In", onPressed: () {}),
           const SizedBox(height: 30),
