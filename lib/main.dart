@@ -40,6 +40,7 @@ class MyApp extends StatelessWidget {
           //headline1 this deprecated
           displayLarge: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 26, color: AppColor.black),
+           //h2
           displayMedium: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 20, color: AppColor.black),
           //bodyText1 this deprecated
