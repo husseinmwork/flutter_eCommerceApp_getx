@@ -15,7 +15,7 @@ class LanguageScreen extends GetView<LocaleController> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("1".tr, style: Theme.of(context).textTheme.displayLarge),
+              Text("1".tr, style: Theme.of(context).textTheme.displayMedium),
               const SizedBox(height: 20),
               CustomButtonLang(
                   textbutton: "Ar",
