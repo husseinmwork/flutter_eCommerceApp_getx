@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    LocaleController controller =  Get.put(LocaleController());
+    LocaleController controller = Get.put(LocaleController());
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       translations: MyTranslation(),
@@ -39,13 +39,17 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           //headline1 this deprecated
           displayLarge: TextStyle(
+              fontWeight: FontWeight.bold, fontSize: 26, color: AppColor.black),
+          displayMedium: TextStyle(
               fontWeight: FontWeight.bold, fontSize: 20, color: AppColor.black),
           //bodyText1 this deprecated
-          bodyLarge: TextStyle(
+
+          bodyMedium: TextStyle(
               height: 2,
               color: AppColor.grey,
               fontWeight: FontWeight.bold,
-              fontSize: 17),
+              fontSize: 14),
+          bodySmall: TextStyle(height: 2, color: AppColor.grey, fontSize: 14),
         ),
         primarySwatch: Colors.blue,
       ),
