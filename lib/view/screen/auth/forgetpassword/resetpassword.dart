@@ -30,24 +30,29 @@ class ResetPasswordScreen extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
         child: ListView(children: [
           const SizedBox(height: 20),
-          const CustomTextTitleAuth(text: "New Password"),
+          CustomTextTitleAuth(text: "35".tr),
           const SizedBox(height: 10),
-          const CustomTextBodyAuth(
-              text:
-                  "Please Enter new Password"),
+          CustomTextBodyAuth(text: "35".tr),
           const SizedBox(height: 15),
-            CustonTextFormAuth(
+          CustonTextFormAuth(
             mycontroller: controller.password,
-            hinttext: "Enter Your Password",
+            hinttext: "13".tr,
             iconData: Icons.lock_outline,
-            labeltext: "Password",
-          ),   CustonTextFormAuth(
-            mycontroller: controller.password,
-            hinttext: "Re Enter Your Password",
-            iconData: Icons.lock_outline,
-            labeltext: "Password",
+            labeltext: "19".tr,
+            // mycontroller: ,
           ),
-          CustomButtomAuth(text: "save", onPressed: () {}),
+          CustonTextFormAuth(
+            mycontroller: controller.password,
+            hinttext: "Re" + " " + "13".tr,
+            iconData: Icons.lock_outline,
+            labeltext: "19".tr,
+            // mycontroller: ,
+          ),
+          CustomButtomAuth(
+              text: "33".tr,
+              onPressed: () {
+                controller.goToSuccessResetPassword();
+              }),
           const SizedBox(height: 40),
         ]),
       ),

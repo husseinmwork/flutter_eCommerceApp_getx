@@ -9,8 +9,8 @@ import 'package:flutter_ecommerce/view/widget/auth/customtexttitleauth.dart';
 import 'package:get/get.dart';
 
 
-class CheckEmail extends StatelessWidget {
-  const CheckEmail({Key? key}) : super(key: key);
+class CheckEmailScreen extends StatelessWidget {
+  const CheckEmailScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

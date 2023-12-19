@@ -27,44 +27,44 @@ class LoginScreen extends StatelessWidget {
                 .copyWith(color: AppColor.grey)),
       ),
       body: Container(
-        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 30),
+        padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 30),
         child: ListView(children: [
-          const SizedBox(height: 15),
           const LogoAuth(),
-          const CustomTextTitleAuth(text: "Welcome Back"),
+          const SizedBox(height: 20),
+            CustomTextTitleAuth(text: "10".tr),
           const SizedBox(height: 10),
-          const CustomTextBodyAuth(
+            CustomTextBodyAuth(
               text:
-                  "Sign In With Your Email And Password OR Continue With Social Media"),
-          const SizedBox(height: 65),
+                  "11".tr),
+          const SizedBox(height: 15),
           CustonTextFormAuth(
             mycontroller: controller.email,
-            hinttext: "Enter Your Email",
+            hinttext: "12".tr,
             iconData: Icons.email_outlined,
-            labeltext: "Email",
+            labeltext: "18".tr,
             // mycontroller: ,
           ),
           CustonTextFormAuth(
             mycontroller: controller.password,
-            hinttext: "Enter Your Password",
+            hinttext: "13".tr,
             iconData: Icons.lock_outline,
-            labeltext: "Password",
+            labeltext: "19".tr,
             // mycontroller: ,
           ),
           InkWell(
-            onTap: (){
+            onTap: () {
               controller.goToForgetPassword();
             },
-            child: const Text(
-              "Forget Password",
-              textAlign: TextAlign.end,
+            child:   Text(
+              "14".tr,
+              textAlign: TextAlign.right,
             ),
           ),
-          CustomButtomAuth(text: "Sign In", onPressed: () {}),
-          const SizedBox(height: 30),
+          CustomButtomAuth(text: "15".tr, onPressed: () {}),
+          const SizedBox(height: 40),
           CustomTextSignUpOrSignIn(
-            textone: "Don't have an account ? ",
-            texttwo: "SignUp",
+            textone: "16".tr,
+            texttwo: "17".tr,
             onTap: () {
               controller.goToSignUp();
             },

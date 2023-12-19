@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/core/constant/routes.dart';
+import 'package:flutter_ecommerce/view/screen/auth/checkemail.dart';
 import 'package:flutter_ecommerce/view/screen/auth/forgetpassword/forgetpassword.dart';
 import 'package:flutter_ecommerce/view/screen/auth/login.dart';
 import 'package:flutter_ecommerce/view/screen/auth/forgetpassword/resetpassword.dart';
@@ -16,8 +17,9 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.forgetPassword: (context) => const ForgetPasswordScreen(),
   AppRoutes.resetPassword: (context) => const ResetPasswordScreen(),
   AppRoutes.verfiyCode: (context) => const VerfiyCodeScreen(),
-    AppRoutes.successResetpassword: (context) => const SuccessResetPasswordScreen(),
+  AppRoutes.successResetpassword: (context) => const SuccessResetPasswordScreen(),
   AppRoutes.successSignUp: (context) => const SuccessSignUpScreen(),
+  AppRoutes.checkEmail: (context) => const CheckEmailScreen(),
 
   // OnBoarding
   AppRoutes.onBoarding: (context) => const OnBoardingScreen(),
