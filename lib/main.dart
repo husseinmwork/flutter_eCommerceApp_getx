@@ -5,7 +5,6 @@ import 'package:flutter_ecommerce/core/localization/translation.dart';
 import 'package:flutter_ecommerce/core/services/services.dart';
 import 'package:flutter_ecommerce/routes.dart';
 import 'package:flutter_ecommerce/view/screen/languages.dart';
-import 'package:flutter_ecommerce/view/screen/onboarding.dart';
 import 'package:get/get.dart';
 
 //arch
