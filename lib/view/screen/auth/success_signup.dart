@@ -3,7 +3,6 @@ import 'package:flutter_ecommerce/controller/auth/successsignup_controller.dart'
 import 'package:flutter_ecommerce/core/constant/color.dart';
 import 'package:flutter_ecommerce/view/widget/auth/custombuttonauth.dart';
 import 'package:get/get.dart';
-import 'package:get/get_utils/get_utils.dart';
 
 class SuccessSignUpScreen extends StatelessWidget {
   const SuccessSignUpScreen({Key? key}) : super(key: key);

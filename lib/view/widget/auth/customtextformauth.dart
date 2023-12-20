@@ -5,9 +5,11 @@ class CustonTextFormAuth extends StatelessWidget {
   final String labeltext;
   final IconData iconData;
   final TextEditingController? mycontroller;
+  final String? Function(String?)? validator;
 
   const CustonTextFormAuth(
       {Key? key,
+       this.validator,
       required this.hinttext,
       required this.labeltext,
       required this.iconData,
@@ -19,6 +21,7 @@ class CustonTextFormAuth extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(bottom: 20),
       child: TextFormField(
+        validator:validator ,
         controller: mycontroller,
         decoration: InputDecoration(
             hintText: hinttext,

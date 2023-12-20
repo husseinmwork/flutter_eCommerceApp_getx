@@ -35,6 +35,7 @@ class SignUpScreen extends StatelessWidget {
           CustomTextBodyAuth(text: "24".tr),
           const SizedBox(height: 15),
           CustonTextFormAuth(
+            
             mycontroller: controller.username,
             hinttext: "23".tr,
             iconData: Icons.person_outline,
