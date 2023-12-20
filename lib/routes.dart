@@ -8,6 +8,7 @@ import 'package:flutter_ecommerce/view/screen/auth/signup.dart';
 import 'package:flutter_ecommerce/view/screen/auth/forgetpassword/success_resetpassword.dart';
 import 'package:flutter_ecommerce/view/screen/auth/success_signup.dart';
 import 'package:flutter_ecommerce/view/screen/auth/forgetpassword/verifiycode.dart';
+import 'package:flutter_ecommerce/view/screen/auth/verifycodesignup.dart';
 import 'package:flutter_ecommerce/view/screen/onboarding.dart';
 
 Map<String, Widget Function(BuildContext)> routes = {
@@ -20,6 +21,7 @@ Map<String, Widget Function(BuildContext)> routes = {
   AppRoutes.successResetpassword: (context) => const SuccessResetPasswordScreen(),
   AppRoutes.successSignUp: (context) => const SuccessSignUpScreen(),
   AppRoutes.checkEmail: (context) => const CheckEmailScreen(),
+  AppRoutes.verfiyCodeSignUp: (context) => const VerfiyCodeSignUpScreen(),
 
   // OnBoarding
   AppRoutes.onBoarding: (context) => const OnBoardingScreen(),

@@ -44,7 +44,7 @@ class CheckEmailScreen extends StatelessWidget {
             labeltext: "18".tr,
           ),
           CustomButtomAuth(text: "30".tr, onPressed: () {
-            controller.goToSuccessSignUp() ; 
+            controller.goToVerifyCode() ; 
           }),
           const SizedBox(height: 40),
         ]),

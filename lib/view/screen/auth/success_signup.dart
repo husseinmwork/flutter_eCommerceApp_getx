@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/controller/auth/successsignup_controller.dart';
 import 'package:flutter_ecommerce/core/constant/color.dart';
 import 'package:flutter_ecommerce/view/widget/auth/custombuttonauth.dart';
+import 'package:get/get.dart';
 import 'package:get/get_utils/get_utils.dart';
 
 class SuccessSignUpScreen extends StatelessWidget {
@@ -8,6 +10,8 @@ class SuccessSignUpScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SuccessSignUpControllerImp controller =
+        Get.put(SuccessSignUpControllerImp());
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -39,8 +43,8 @@ class SuccessSignUpScreen extends StatelessWidget {
             width: double.infinity,
             child: CustomButtomAuth(
                 text: "31".tr,
-                onPressed: () {
-                  // controller.signUp();
+                 onPressed: () {
+                  controller.goToPageLogin();
                 }),
           ),
           const SizedBox(height: 30)

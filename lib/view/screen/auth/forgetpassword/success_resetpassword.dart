@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce/controller/auth/successresetpassword_controller.dart';
 import 'package:flutter_ecommerce/core/constant/color.dart';
 import 'package:flutter_ecommerce/view/widget/auth/custombuttonauth.dart';
-import 'package:get/get_utils/get_utils.dart';
+import 'package:get/get.dart';
 
 class SuccessResetPasswordScreen extends StatelessWidget {
   const SuccessResetPasswordScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    SuccessResetPasswordController controller = Get.put(SuccessResetPasswordControllerImp());
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -41,6 +43,7 @@ class SuccessResetPasswordScreen extends StatelessWidget {
                 text: "31".tr,
                 onPressed: () {
                   // controller.signUp();
+                  controller.goToPageLogin();
                 }),
           ),
           const SizedBox(height: 30)
